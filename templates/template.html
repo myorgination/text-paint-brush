@@ -1,0 +1,14 @@
+<html>
+   <head>
+   </head>
+   <body>
+     <form action="textPaint" method="post">
+           <textarea   name="textFields" rows="20" cols="50" >
+           </textarea>
+           <input type="submit" value="Submit">
+     </form>
+      {% for item in items %}
+         <li>{{ item }}</li>
+      {% end %}
+   </body>
+</html>
