@@ -7,8 +7,12 @@
            </textarea>
            <input type="submit" value="Submit">
      </form>
-      {% for item in items %}
-         <li>{{ item }}</li>
-      {% end %}
+     <svg width="600" height="800" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+         {% for item in items %}
+            <rect x="{{ item['i'] * 5 }}" y="{{ item['j'] * 5 }}" width="5" height="5" style="fill:{{ item['color'] }}"/>
+         {% end %}
+
+     </svg>
+
    </body>
 </html>
